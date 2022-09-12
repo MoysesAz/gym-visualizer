@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="reps" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sets" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="routine" optional="YES" toMany="YES" minCount="1" maxCount="10" deletionRule="Nullify" destinationEntity="Routine" inverseName="exercices" inverseEntity="Routine"/>
+    </entity>
+    <entity name="Routine" representedClassName="Routine" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="exercices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="routine" inverseEntity="Exercise"/>
+        <relationship name="week" toMany="YES" minCount="1" maxCount="7" deletionRule="Nullify" destinationEntity="Week" inverseName="routines" inverseEntity="Week"/>
+    </entity>
+    <entity name="Week" representedClassName="Week" syncable="YES">
+        <relationship name="routines" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Routine" inverseName="week" inverseEntity="Routine"/>
+    </entity>
+    <elements>
+        <element name="Exercise" positionX="-115.90234375" positionY="-305.93359375" width="128" height="118"/>
+        <element name="Routine" positionX="143.0234375" positionY="-260.8203125" width="128" height="88"/>
+        <element name="Week" positionX="345.34765625" positionY="-231.05859375" width="128" height="58"/>
+    </elements>
 </model>

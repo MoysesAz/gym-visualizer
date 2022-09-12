@@ -17,6 +17,12 @@
 		955BFC1228CB84DE000C4439 /* GymVisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955BFC1128CB84DE000C4439 /* GymVisualizerTests.swift */; };
 		955BFC1C28CB84DE000C4439 /* GymVisualizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955BFC1B28CB84DE000C4439 /* GymVisualizerUITests.swift */; };
 		955BFC1E28CB84DE000C4439 /* GymVisualizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955BFC1D28CB84DE000C4439 /* GymVisualizerUITestsLaunchTests.swift */; };
+		EEA6E4E528CEE30C001F5439 /* Week+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6E4DF28CEE30C001F5439 /* Week+CoreDataClass.swift */; };
+		EEA6E4E628CEE30C001F5439 /* Week+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6E4E028CEE30C001F5439 /* Week+CoreDataProperties.swift */; };
+		EEA6E4E728CEE30C001F5439 /* Routine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6E4E128CEE30C001F5439 /* Routine+CoreDataClass.swift */; };
+		EEA6E4E828CEE30C001F5439 /* Routine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6E4E228CEE30C001F5439 /* Routine+CoreDataProperties.swift */; };
+		EEA6E4E928CEE30C001F5439 /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6E4E328CEE30C001F5439 /* Exercise+CoreDataClass.swift */; };
+		EEA6E4EA28CEE30C001F5439 /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6E4E428CEE30C001F5439 /* Exercise+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		955BFC1728CB84DE000C4439 /* GymVisualizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymVisualizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		955BFC1B28CB84DE000C4439 /* GymVisualizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymVisualizerUITests.swift; sourceTree = "<group>"; };
 		955BFC1D28CB84DE000C4439 /* GymVisualizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymVisualizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEA6E4DF28CEE30C001F5439 /* Week+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEA6E4E028CEE30C001F5439 /* Week+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Week+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEA6E4E128CEE30C001F5439 /* Routine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEA6E4E228CEE30C001F5439 /* Routine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEA6E4E328CEE30C001F5439 /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEA6E4E428CEE30C001F5439 /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +115,10 @@
 			children = (
 				955BFBF728CB84DC000C4439 /* AppDelegate.swift */,
 				955BFBF928CB84DC000C4439 /* SceneDelegate.swift */,
-				955BFBFB28CB84DC000C4439 /* ViewController.swift */,
-				955BFBFD28CB84DC000C4439 /* Main.storyboard */,
+				EEA6E4B228CED204001F5439 /* Model */,
+				EEA6E4B128CED1FE001F5439 /* ViewModel */,
+				EEA6E4B028CED1F6001F5439 /* View */,
 				955BFC0328CB84DE000C4439 /* Assets.xcassets */,
-				955BFC0528CB84DE000C4439 /* LaunchScreen.storyboard */,
 				955BFC0828CB84DE000C4439 /* Info.plist */,
 				955BFC0028CB84DC000C4439 /* GymVisualizer.xcdatamodeld */,
 			);
@@ -128,6 +140,36 @@
 				955BFC1D28CB84DE000C4439 /* GymVisualizerUITestsLaunchTests.swift */,
 			);
 			path = GymVisualizerUITests;
+			sourceTree = "<group>";
+		};
+		EEA6E4B028CED1F6001F5439 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				955BFBFB28CB84DC000C4439 /* ViewController.swift */,
+				955BFBFD28CB84DC000C4439 /* Main.storyboard */,
+				955BFC0528CB84DE000C4439 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEA6E4B128CED1FE001F5439 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEA6E4B228CED204001F5439 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEA6E4DF28CEE30C001F5439 /* Week+CoreDataClass.swift */,
+				EEA6E4E028CEE30C001F5439 /* Week+CoreDataProperties.swift */,
+				EEA6E4E128CEE30C001F5439 /* Routine+CoreDataClass.swift */,
+				EEA6E4E228CEE30C001F5439 /* Routine+CoreDataProperties.swift */,
+				EEA6E4E328CEE30C001F5439 /* Exercise+CoreDataClass.swift */,
+				EEA6E4E428CEE30C001F5439 /* Exercise+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA6E4E828CEE30C001F5439 /* Routine+CoreDataProperties.swift in Sources */,
 				955BFBFC28CB84DC000C4439 /* ViewController.swift in Sources */,
 				955BFC0228CB84DC000C4439 /* GymVisualizer.xcdatamodeld in Sources */,
 				955BFBF828CB84DC000C4439 /* AppDelegate.swift in Sources */,
+				EEA6E4E628CEE30C001F5439 /* Week+CoreDataProperties.swift in Sources */,
+				EEA6E4E928CEE30C001F5439 /* Exercise+CoreDataClass.swift in Sources */,
+				EEA6E4E528CEE30C001F5439 /* Week+CoreDataClass.swift in Sources */,
+				EEA6E4EA28CEE30C001F5439 /* Exercise+CoreDataProperties.swift in Sources */,
+				EEA6E4E728CEE30C001F5439 /* Routine+CoreDataClass.swift in Sources */,
 				955BFBFA28CB84DC000C4439 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +497,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +526,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
